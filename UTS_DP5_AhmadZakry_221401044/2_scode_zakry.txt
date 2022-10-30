@@ -1,0 +1,25 @@
+program Main;
+uses crt, sysutils;
+
+var
+a, b : String;
+s : Real;
+
+begin
+
+  clrscr;
+
+  write('Masukkan nama awal  : ');
+  readln(a);
+  write('Masukkan nama akhir : ');
+  readln(b);
+  write('Masukkan suhu hari ini dalam celcius : ');
+  readln(s);
+
+  clrscr;
+
+  write('Halo ', a, ' ', b, ', hari ini bersuhu ', (s * 0.8):0:2, ' reamur / ', (s + 273):0:2, ' kelvin / ', ((s * 1.8) + 32):0:2, ' Farenheit.');
+  readln;
+
+end.
+

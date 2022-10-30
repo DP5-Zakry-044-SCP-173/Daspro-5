@@ -1,0 +1,22 @@
+program Main;
+uses crt, sysutils;
+
+var
+i : Integer;
+
+begin
+
+  clrscr;
+  i := 1;
+
+  while i < 6 do
+  begin
+    write(i, ' ');
+    i := i + 1;
+  end;
+
+  writeln;
+  readln;
+
+end.
+

@@ -1,0 +1,51 @@
+program Main;
+uses crt, sysutils;
+
+var
+n, i, j, k : Integer;
+
+begin
+
+  clrscr;
+
+  write('Nilai = ');
+  readln(n);
+
+  clrscr;
+
+  for i := 1 to n do
+  begin
+
+    for j := 1 to (n - i) do
+    begin
+    write(' ');
+    end;
+
+    for k := 1 to i do
+    begin
+    write(' *');
+    end;
+
+  writeln;
+  end;
+
+  for i := (n - 1) downto 1 do
+  begin
+
+    for j := (n - i) downto 1 do
+    begin
+    write(' ');
+    end;
+
+    for k := i downto 1 do
+    begin
+    write(' *');
+    end;
+
+  writeln;
+  end;
+
+  readln;
+
+end.
+

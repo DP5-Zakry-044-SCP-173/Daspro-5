@@ -1,0 +1,41 @@
+program Main;
+uses crt, sysutils;
+
+var
+n, s : String;
+A, B, C : Integer;
+
+begin
+  clrscr;
+
+  write('Masukkan nama : ');
+  readln(n);
+  write('Masukkan suhu : ');
+  readln(s);
+
+  clrscr;
+
+  A := CompareText(s, 'Pagi');
+  B := CompareText(s, 'Siang');
+  C := CompareText(s, 'Malam');
+
+  if (A = 0) or (B = 0) or (C = 0) then
+
+  begin
+
+    writeln('S'); writeln('E'); writeln('L'); writeln('A'); writeln('M'); writeln('A'); writeln('T');
+    writeln(s);
+    writeln(n);
+
+  end
+
+  else
+
+  begin
+    write('Maaf, input waktu yang diterima hanya pagi, siang, dan malam.');
+  end;
+
+  readln;
+
+end.
+
